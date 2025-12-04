@@ -1,4 +1,4 @@
-# Exclude API routes from SPA fallback - let them be handled by functions/api/[[path]].ts
-/api/* :splat
-# SPA fallback for all other routes
+# SPA fallback for all non-API routes
+# Cloudflare Pages Functions (functions/api/[[path]].ts) handles /api routes with highest priority
+# The condition below ensures only non-API and non-static paths are redirected to index.html
 /* /index.html 200
