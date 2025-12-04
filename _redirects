@@ -1,1 +1,4 @@
+# Exclude API routes from SPA fallback - let them be handled by functions/api/[[path]].ts
+/api/* :splat
+# SPA fallback for all other routes
 /* /index.html 200
